@@ -30,8 +30,8 @@ public class Cyclometer {
         totalDistance=distanceTrip1+distanceTrip2;                              // calculates total distance
         
         // prints out trip distances and total
-        System.out.println("Trip 1 was "+distanceTrip1+" miles.");
-        System.out.println("Trip 2 was "+distanceTrip2+" miles.");
-        System.out.println("The total distance was "+totalDistance+" miles.");
+        System.out.println("Trip 1 was "+distanceTrip1+" miles.");              // gives trip 1 distance in miles
+        System.out.println("Trip 2 was "+distanceTrip2+" miles.");              // gives trip 2 distance in miles
+        System.out.println("The total distance was "+totalDistance+" miles.");  // gives total trip distance in miles
     }
 }
