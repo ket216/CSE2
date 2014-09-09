@@ -9,16 +9,16 @@ public class Cyclometer {
     
     // add main method
     public static void main(String[] args) {        
-        int secsTrip1=480;          // duration of trip 1
-        int secsTrip2=3220;         // duration of trip 2
-        int countsTrip1=1561;       // number of rotations for trip 1
-        int countsTrip2=9037;       // number of rotations for trip 2
-        double wheelDiameter=27.0;  // wheel diameter
-        double distanceTrip1, distanceTrip2, totalDistance; //
-        double pi=3.14159;             // π
-        double feetPerMile=5280;           // conversion
-        double inchesPerFoot=12;           // conversion
-        double secondsPerMinute=60;        // conversion
+        int secsTrip1=480;                                  // duration of trip 1
+        int secsTrip2=3220;                                 // duration of trip 2
+        int countsTrip1=1561;                               // number of rotations for trip 1
+        int countsTrip2=9037;                               // number of rotations for trip 2
+        double wheelDiameter=27.0;                          // wheel diameter
+        double distanceTrip1, distanceTrip2, totalDistance; // sets variables as doubles
+        double pi=3.14159;                                  // π
+        double feetPerMile=5280;                            // conversion from feet to miles
+        double inchesPerFoot=12;                            // conversion from inches to feet
+        double secondsPerMinute=60;                         // conversion from seconds to minutes
         
         // prints out trip durations and rotation counts
         System.out.println("Trip 1 took "+ (secsTrip1/secondsPerMinute)+" minutes and had "+ countsTrip1+" counts."); 
