@@ -29,10 +29,10 @@ public class Arithmetic{
         double totalSubtotal$=subtotalSockCost$+subtotalGlassCost$+subtotalEnvelopeCost$;   // total subtotals
         
         // totals
-        double totalSockCost$=nSocks*sockCost$*tax;                             // total cost of socks
-        double totalGlassCost$=nGlasses*glassCost$*tax;                         // total cost of drinking glasses
-        double totalEnvelopeCost$=nEnvelopes*envelopeCost$*tax;                 // total cost of envelope boxes
-        double total$=(totalSockCost$+totalGlassCost$+totalEnvelopeCost$)*tax;  // total cost
+        double totalSockCost$=nSocks*sockCost$*tax;                                         // total cost of socks
+        double totalGlassCost$=nGlasses*glassCost$*tax;                                     // total cost of drinking glasses
+        double totalEnvelopeCost$=nEnvelopes*envelopeCost$*tax;                             // total cost of envelope boxes
+        double total$=(totalSockCost$+totalGlassCost$+totalEnvelopeCost$)*tax;              // total cost
         
         // prints out associated socks costs
         System.out.println("Item purchased: Socks");                                            // prints item name
