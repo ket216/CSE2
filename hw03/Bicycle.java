@@ -4,6 +4,8 @@
     September 10, 2014
 */
 
+import java.util.Scanner;
+
 // define a class
 public class Bicycle {
     
@@ -14,10 +16,10 @@ public class Bicycle {
         double feetPerMile=5280;                            // conversion from feet to miles
         double inchesPerFoot=12;                            // conversion from inches to feet
         double secondsPerMinute=60;                         // conversion from seconds to minutes
-        int counts = 0;
-        int seconds = 0;
+        double counts = 0.0;
+        double seconds = 0.0;
         
-        Scanner counts = new Scanner(System.in);                            // creates new scanner
+        counts = new Scanner(System.in);                                    // creates new scanner
         System.out.print("Enter the number counts on the cyclometer: ");    // prompts for user input
         double counts = counts.nextDouble();                                // stores input as a double
         
