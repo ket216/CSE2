@@ -1,7 +1,7 @@
 /*  Kevin Trinh
     CSE 2
     hw03 - Bicycle
-    September 10, 2014
+    September 16, 2014
 */
 
 import java.util.Scanner;
@@ -16,25 +16,27 @@ public class Bicycle {
         double feetPerMile=5280;                            // conversion from feet to miles
         double inchesPerFoot=12;                            // conversion from inches to feet
         double secondsPerMinute=60;                         // conversion from seconds to minutes
-        double counts = 0.0;
-        double seconds = 0.0;
+        double distance;                                    // declares distance variable
+        double duration;                                    // declares duration variable
+        double averageMPH;                                  // declares averageMPH variable
         
-        counts = new Scanner(System.in);                                    // creates new scanner
+        Scanner counter = new Scanner(System.in);                           // creates new scanner
+        
         System.out.print("Enter the number counts on the cyclometer: ");    // prompts for user input
-        double counts = counts.nextDouble();                                // stores input as a double
+        double counts = counter.nextDouble();                               // stores input as a double
         
-        Scanner seconds = new Scanner(System.in);                           // creates new scanner
         System.out.print("Enter the trip duration in seconds: ");           // prompts for user input
-        double seconds = seconds.nextDouble();                              // stores input as a double
+        double seconds = counter.nextDouble();                              // stores input as a double
         
-        distance = counts*wheelDiameter*pi/inchesPerFoot/feetPerMile;   // calculates trip distance in miles
-        duration = seconds/secondsPerMinute;                            // calculates trip duration in minutes
-        averageMPH = distance/(duration/60);                            // calculates average speed in MPH
+        distance = counts*wheelDiameter*pi/inchesPerFoot/feetPerMile;       // calculates trip distance in miles
+        duration = seconds/secondsPerMinute;                                // calculates trip duration in minutes
+        averageMPH = distance/(duration/60);                                // calculates average speed in MPH
         
+        
+        // final print
         System.out.println("Counts on cyclometer: "+counts+"");
-        System.out.println("Trip duration: "+duration+"");
-        System.out.println("Distance traveled: "+distance+"");
-        System.out.println("Average speed: "+averageMPH+"");
-        
+        System.out.println("Trip duration: "+(int)(duration*100)/100.0 + " minutes.");
+        System.out.println("Distance traveled: "+(int)(distance*100)/100.0 + " miles.");
+        System.out.println("Average speed: "+(int)(averageMPH*100)/100.0 + " MPH.");
     }
 }

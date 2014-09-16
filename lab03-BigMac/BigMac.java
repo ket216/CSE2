@@ -11,8 +11,7 @@ public class BigMac{
     
     // add main method
     public static void main(String[] args) {
-        Scanner myScanner;                                                                  // declares Scanner variable "myScanner"
-        myScanner = new Scanner( System.in );                                               // declares myScanner as a system input
+        Scanner myScanner = new Scanner( System.in );                                       // declares myScanner as a system input
         
         System.out.print("Enter the number of Big Macs (an integer > 0): ");                // prompts user for nBigMacs
         int nBigMacs = myScanner.nextInt();                                                 // stores user integer input for nBigMacs as an int
@@ -24,7 +23,7 @@ public class BigMac{
         double taxRate = myScanner.nextDouble();                                            // stores user double input for taxRate as a double
         
         taxRate/=100;                                                                       // calculates taxRate as a percent
-        
+        /*
         
         double cost$;
         int dollars, dimes, pennies;                                                        // declares cost$ as a double
@@ -35,6 +34,6 @@ public class BigMac{
         
         // final print
         System.out.println("The total cost of "+nBigMacs+" Big Macs, at $"+bigMac$+" per Big Mac, with a sales tax of "+(int)(taxRate*100)+ "%, is $"+dollars+"."+dimes+pennies+".");
-
+        */
     }
 }
