@@ -34,7 +34,7 @@ public class TimePadding {
             int hours = (int)dhours;
             int minutes = (int)(dminutes-(60*hours));
             int seconds = (int)(dseconds-(60*minutes)-(3600*hours));
-            
+         
             System.out.println("The time is: " + hours + ":" + minutes + ":" + seconds + ".");
             }
         
