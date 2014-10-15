@@ -1,6 +1,6 @@
 /*  Kevin Trinh
     CSE 2
-    hw06 - Roulette
+    hw06 - Roulette.java
     October 14, 2014
     
     This program counts the number of times a specific number comes up in a game of Roulette.
