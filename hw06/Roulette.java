@@ -59,7 +59,7 @@ public class Roulette {
         else {                                                                  // otherwise...
             System.out.println("You bet on: " + userNumber);                    // prints out user's number
             System.out.println("Sorry, you only won " + roundsWon + " times."); // prints out sympathetic message
-        }    
+        }                                                                       // end of else statement
     }                                                                           // end of main method
 }                                                                               // end of public class
 

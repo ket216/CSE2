@@ -67,7 +67,6 @@ public class Root {
             System.out.println("You did not enter a valid number.");                            // prints error
             System.exit(0);                                                                     // terminates code
         }                                                                                       // end of else statement
-        
     }                                                                                           // end of main method
 }                                                                                               // end of public class
 
