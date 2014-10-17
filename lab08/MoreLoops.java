@@ -109,12 +109,15 @@ public class MoreLoops {
             */
             
             if (n > 5 || n < 1) {
-                System.out.println(n + " is > 5 or < 1");
+                for (count = 0 ; count < 11 ; count++)
+                    System.out.println(n + " is > 5 or < 1");
             }
             else if (n == 3) {
+                for (count = 0 ; count < 11 ; count++)
                 System.out.println();
             }
             else if (n == 4 || n == 5) {
+                for (count = 0 ; count < 11 ; count++)
                 System.out.println("Case " + n);
             }
             else {
