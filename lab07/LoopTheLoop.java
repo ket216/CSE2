@@ -67,13 +67,13 @@ public class LoopTheLoop {
                     }                                                               // end of if statement
                 
                     else {                                                          // if nStars != [1,15]
-                        System.out.println("2 - You did not enter a valid input."); // prints error
+                        System.out.println("You did not enter a valid input.");     // prints error
                         continue;                                                   // reruns the loop
                     }                                                               // end of else statement
                 }                                                                   // end of if scanner.hasNextInt statement
                 
                 else {                                                              // if scanner does not have next int...
-                    System.out.println("3 - You did not enter a valid input.");     // prints error
+                    System.out.println("You did not enter a valid input.");         // prints error
                     continue;                                                       // reruns the loop
                 }                                                                   // end of else statement
                 
@@ -94,7 +94,7 @@ public class LoopTheLoop {
                 case "n":                                                           // for case n
                     System.exit(0);                                                 // terminates code
                 default:                                                            // for case (anything else)
-                    System.out.println("1 - You did not enter a valid input.");     // prints error
+                    System.out.println("You did not enter a valid input.");         // prints error
                     continue;                                                       // reruns while true loop
                 }                                                                   // end of switch statement
                 
