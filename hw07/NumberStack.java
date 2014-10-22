@@ -23,6 +23,8 @@ public class NumberStack {
         int userNumber = 0;
         
         //////////////////////////////////////////////////////////////////////////
+        /// RECEIVING & CHECKING USER INPUT // RECEIVING & CHECKING USER INPUT ///
+        //////////////////////////////////////////////////////////////////////////
         while (true) {                                                          // start of while to check for int
             System.out.print("Enter an integer between 1 - 9 (inclusive): ");   // prompts user for integer [1,9]
             
