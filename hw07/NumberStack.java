@@ -46,6 +46,9 @@ public class NumberStack {
                 continue;                                                       // reruns this while loop
             }
         }                                                                       // end of while loop
+        
+        System.out.println("");
+        
         //////////////////////////////////////////////////////////////////////////
         // FOR LOOP // FOR LOOP // FOR LOOP // FOR LOOP // FOR LOOP // FOR LOOP //
         //////////////////////////////////////////////////////////////////////////
@@ -54,6 +57,9 @@ public class NumberStack {
         int j = 1;                                                              // variable for number of lines
         int k = 1;                                                              // variable for dashes
         int l = 1;                                                              // variable for spaces
+        
+        System.out.println("Using for loops...");
+        System.out.println("");
         
         for (i = 1; i <= userNumber; i++) {                                     // for loop for numbers
             
@@ -92,6 +98,9 @@ public class NumberStack {
         j = 1;                                                                  // resets value for j (variable for number of lines)
         k = 1;                                                                  // resets value for k (variable for dashes)
         l = 1;                                                                  // resets value for l (variable for spaces)
+        
+        System.out.println("Using while loops...");
+        System.out.println("");
         
         while (i <= userNumber) {                                               // while i <= userNumber...
             
@@ -141,6 +150,9 @@ public class NumberStack {
         j = 1;                                                                  // resets value for j (variable for number of lines)
         k = 1;                                                                  // resets value for k (variable for dashes)
         l = 1;                                                                  // resets value for l (variable for spaces)
+        
+        System.out.println("Using do while loops...");
+        System.out.println("");
         
         do {                                                                    // while i <= userNumber
             
