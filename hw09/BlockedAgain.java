@@ -12,7 +12,7 @@ import java.util.Scanner;
 // add class
 public class BlockedAgain {
 
-    // add line method
+    // add line method ///////////////////////////////////////////////////////////
     public static void line(int x) {
         
         for (int i = 1 ; i <= x ; i++) {                                        // for loop controlling rows being printed
@@ -30,7 +30,7 @@ public class BlockedAgain {
         
     }
 
-    // add block method
+    // add block method //////////////////////////////////////////////////////////
     public static void block(int x) {
         
         for (int i = 1 ; i <= x ; i++) {                                        // for loop controlling how many liens per block
@@ -38,14 +38,14 @@ public class BlockedAgain {
         }
     }
 
-    // add allBlocks method
+    // add allBlocks method //////////////////////////////////////////////////////
     public static void allBlocks(int x) {
-        System.out.println("");
+        System.out.println("");                                                 // line break
         block(x);                                                               // calls block method
         
     }
     
-    // add checkRange method
+    // add checkRange method /////////////////////////////////////////////////////
     public static int checkRange(int userNumber) {
         
         if (userNumber >= 1 && userNumber <= 9) {                               // if userNumber [1,9]...
@@ -56,7 +56,7 @@ public class BlockedAgain {
         }
     }
 
-    // add checkInt method
+    // add checkInt method ///////////////////////////////////////////////////////////////
     public static int checkInt(Scanner userInt) {
         
         while (true) {                                                                  // while true
@@ -81,8 +81,7 @@ public class BlockedAgain {
         }
     }
 
-
-    // add getInt method
+    // add getInt method /////////////////////////////////////////////////////////......//
     public static int getInt() {
     
         Scanner userInt = new Scanner(System.in);                               // declares and assigns new scanner utility
@@ -94,84 +93,11 @@ public class BlockedAgain {
         return userNumber;                                                      // return userNumber to main method
     }
     
+    // add main method ///////////////////////////////////////////////////////////
     public static void main(String []s){
-        int m;
-    
-        //force user to enter int in range 1-9, inclusive.
-        m = getInt(); 
-        allBlocks(m);
+        int m;                                                                  // initializes int m
+        m = getInt();                                                           // force user to enter int in range [1-9]
+        allBlocks(m);                                                           // calls allBlocks method
     
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-// add public class
-public class BlockedAgain {
-    
-    public static void userInteger(int userNumber) {
-        
-        for (int i = 1 ; i <= userNumber ; i++) {
-            System.out.println(i);
-            
-            
-        }
-        
-    }
-    
-    public static void main(String[] args) {
-        
-        Scanner userInput = new Scanner(System.in);
-        
-        int userNumber = 0;
-        
-        while (true) {                                                          // start of while to check for int
-            System.out.print("Enter an integer between 1 - 9 (inclusive): ");   // prompts user for integer [1,9]
-            
-            if (userInput.hasNextInt()) {                                       // if scanner has next int...
-                userNumber = userInput.nextInt();                               // userNumber = next int
-                
-                if (userNumber >= 1 && userNumber <= 9) {                       // if userNumber = [1,9]...
-                    break;                                                      // breaks out of while true loop
-                }
-                else {                                                          // if userNumber != [1.9]...
-                    System.out.println("You did not enter a valid input.");     // prints error
-                    continue;                                                   // reruns this while loop
-                }
-
-            }                                                                   // end of if userInput.hasNextInt()
-            else {                                                              // if !userInput.hasNextInt()...
-                System.out.println("You did not enter an integer.");            // prints error
-                userInput.next();                                               // clears Scanner
-                continue;                                                       // reruns this while loop
-            }
-        }                                                                       // end of while loop
-        
-        System.out.println("");
-        
-        userInteger(userNumber);
-        
-        
-    }
-}
-*/
