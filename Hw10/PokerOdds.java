@@ -241,9 +241,10 @@ public class PokerOdds {
                     
                 }
                 
-                /* At this point in the code, I know I'm supposed to find how frequently each of the cards appears and increment that variable.
+                /* At this point in the code, I know I'm supposed to find how frequently each of the cards appear and increment that variable.
                    I ran out of time, but I know how I would do it.
                    It would be done with a series of switch statements checking the duplicate value against the card values given in the switch statements in a previous method.
+                   If that duplicate value matches (let's say a King), the counterK variable would be incremented. This would be repeated all 10,000 times.
                    After finding all the matches, I would simply print/format the println statements to reflect the numbers of duplicates with the given cards.
                 
                    Sorry for the messy code, I may or may not have done this the last minute. No time to organize.
