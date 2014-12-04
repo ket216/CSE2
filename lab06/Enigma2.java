@@ -26,7 +26,7 @@ public class Enigma2 {
                 //out+=13;
                 
             case 40:
-                out += 40/0;
+                out += 40;
         }
         System.out.println(out);
     }
