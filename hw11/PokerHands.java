@@ -6,53 +6,54 @@
     This code is an exercise in multidimensional array.
 */
 
+// imports Scanner utility
 import java.util.Scanner;
 
 // add public class
 public class PokerHands {
 
-
+    // adds showOneHand method
     public static void showOneHand(int hand[]) {
         
-        String suit[] = {"Clubs: ", "Diamonds: ", "Hearts: ", "Spades: "};
-        String face[] = {"A ", "K ", "Q ", "J ", "10 ", "9 ", "8 ", "7 ", "6 ", "5 ", "4 ", "3 ", "2 "};
-        String out = "";
+        String suit[] = {"Clubs: ", "Diamonds: ", "Hearts: ", "Spades: "};                                  // creates suit array
+        String face[] = {"A ", "K ", "Q ", "J ", "10 ", "9 ", "8 ", "7 ", "6 ", "5 ", "4 ", "3 ", "2 "};    // creates face array
+        String out = "";                                                                                    // creates out string
         
-        for (int s = 0; s < 4; s++) {
-            out += suit[s];
+        for (int s = 0; s < 4; s++) {                                                                       // for suits 0 < 4
+            out += suit[s];                                                                                 // adds suit[s] to out
             
-            for (int rank = 0; rank < 13; rank++) {
+            for (int rank = 0; rank < 13; rank++) {                                                         // for rank 0 < 13
             
-                for (int card = 0; card < 5; card++) {
+                for (int card = 0; card < 5; card++) {                                                      // for card 0 < 5
                 
-                    if (hand[card] / 13 == s && hand[card] % 13 == rank) {
-                        out += face[rank];
+                    if (hand[card] / 13 == s && hand[card] % 13 == rank) {                                  // calculates card type
+                        out += face[rank];                                                                  // adds face to out
                     }
                 }
             }
-            out += '\n';
+            out += '\n';                                                                                    // prints break
         }
-        System.out.println();
-        System.out.print(out);
+        System.out.println();                                                                               // prints break
+        System.out.print(out);                                                                              // prints out
     }
 
+    // add main method
     public static void main(String[] args) {
+        
+        String[][] hand = new String[5][2];                                                                 // creates hand array 5 cards, 2 values
+        int[][] handInts = new int[5][2];                                                                   // creates hand array represented as ints
+        int[] handIntsSingle = new int[5];                                                                  // creates 1d hand array represented as ints
+        String[] cards = {"A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"};                // creates cards array
 
-        String[][] deck = new String[4][13];
-        String[][] hand = new String[5][2];
-        int[][] handInts = new int[5][2];
-        int[] handIntsSingle = new int[5];
-        String[] cards = {"A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"};
+        Scanner userScanner = new Scanner(System.in);                                                       // new Scanner
+        String suit = "";                                                                                   // creates suits string
+        String userCard = "";                                                                               // creates userCard string
 
-        Scanner userScanner = new Scanner(System.in);
-        String suit = "";
-        String userCard = "";
+        while (true) {                                                                                      // while true
 
-        while (true) {
-
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 5; i++) {                                                                   // for i 0 < 5
                 
-                System.out.println("");
+                System.out.println("");                                                                     // 
                 System.out.print("Enter the suit (c, d, h, s): ");
                 suit = userScanner.next();
                 
